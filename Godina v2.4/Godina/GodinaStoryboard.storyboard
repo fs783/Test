@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="K99-Ij-4lx">
+    <dependencies>
+        <deployment version="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1vh-6R-L6c">
+            <objects>
+                <tabBarController storyboardIdentifier="testBadge" autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K99-Ij-4lx" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="yE8-4w-7Db">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5hK-CX-mdd" kind="relationship" relationship="viewControllers" id="Dhn-Pl-PPH"/>
+                        <segue destination="Gx5-Lg-FrS" kind="relationship" relationship="viewControllers" id="D3f-ql-CDB"/>
+                        <segue destination="YW2-bP-UFe" kind="relationship" relationship="viewControllers" id="NvK-u3-oLb"/>
+                        <segue destination="w8F-pf-arq" kind="relationship" relationship="viewControllers" id="Vj5-97-klK"/>
+                        <segue destination="sxj-rq-Bpe" kind="relationship" relationship="viewControllers" id="mCc-5A-PEt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctm-Qu-9Jy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="1232"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="drk-ES-RMb">
+            <objects>
+                <viewController id="W1H-cv-yF9" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0xX-4O-dZ5">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="v74-E0-Rl1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E59-He-UxJ"/>
+                    <connections>
+                        <outlet property="webView" destination="v74-E0-Rl1" id="IcU-tL-eVU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMn-gU-Glx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="-359"/>
+        </scene>
+        <!--Navigation Controller - Negozio-->
+        <scene sceneID="c8h-7l-4O8">
+            <objects>
+                <navigationController definesPresentationContext="YES" modalTransitionStyle="crossDissolve" id="Gx5-Lg-FrS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Negozio" image="icona_negozio.png" id="0Rm-9S-DJH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Tf-V8-IPR" colorLabel="IBBuiltInLabel-Blue">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7607843876" green="0.0" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="odu-xA-F95">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="kt8-Ex-06h" kind="relationship" relationship="rootViewController" id="9Cn-px-pFW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tC-Qh-t3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="486"/>
+        </scene>
+        <!--Navigation Controller - Notizie-->
+        <scene sceneID="i2C-qI-Xjp">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="YW2-bP-UFe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Notizie" image="newspaper.png" id="74x-l8-htv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vMw-o9-CSk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4bz-u4-NRv" kind="relationship" relationship="rootViewController" id="GMD-ln-zcS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63X-Vd-ZUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="1232"/>
+        </scene>
+        <!--Navigation Controller - Il mio Godina-->
+        <scene sceneID="iKk-vX-7Wa">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="w8F-pf-arq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="3" title="Il mio Godina" image="shopping-cart.png" id="uVe-Lk-QqW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K9q-bI-R4b">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bCE-u4-yXP" kind="relationship" relationship="rootViewController" id="a0V-xg-v9l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ep5-L4-lOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="1978"/>
+        </scene>
+        <!--Notizie View Controller-->
+        <scene sceneID="tXB-bk-Icy">
+            <objects>
+                <viewController id="4bz-u4-NRv" customClass="NotizieViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RJX-wU-GFa">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" id="Yii-QR-125">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hbm-tx-MVg"/>
+                    <connections>
+                        <outlet property="webNotizie" destination="Yii-QR-125" id="Mfv-6e-Qc3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8BD-JY-pmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="1232"/>
+        </scene>
+        <!--My Godina View Controller-->
+        <scene sceneID="ngx-U5-6Gc">
+            <objects>
+                <viewController id="bCE-u4-yXP" customClass="myGodinaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="arT-oo-SbT">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="88R-xe-hT1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98823535439999999" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rsj-fq-gVE"/>
+                    <connections>
+                        <outlet property="ilMioGodina" destination="88R-xe-hT1" id="hIv-N3-Nbp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i32-SS-Vdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325" y="1978"/>
+        </scene>
+        <!--Navigation Controller - Blog-->
+        <scene sceneID="7Km-tJ-u5a">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="sxj-rq-Bpe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Blog" image="blog.png" id="EWh-OV-td6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ce1-cY-deI">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wd7-R1-gB9" kind="relationship" relationship="rootViewController" id="ThC-9n-guG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fba-vg-V4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="2750"/>
+        </scene>
+        <!--Altro View Controller-->
+        <scene sceneID="4xd-eR-5MK">
+            <objects>
+                <viewController id="Wd7-R1-gB9" customClass="AltroViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ruR-Ji-xq7">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView autoresizesSubviews="NO" contentMode="scaleToFill" id="GdI-8x-nrs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5pT-ZY-mlw"/>
+                    <connections>
+                        <outlet property="altro" destination="GdI-8x-nrs" id="pI8-tG-5In"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cH8-xd-Rx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325" y="2750"/>
+        </scene>
+        <!--Negozio View Controller-->
+        <scene sceneID="x0I-Mp-ddY">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="kt8-Ex-06h" customClass="NegozioViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" id="XC6-eN-9S0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="gbc-CV-hQ0">
+                                <rect key="frame" x="7" y="9" width="306" height="183"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="239" verticalHuggingPriority="528" horizontalCompressionResistancePriority="449" text="   Telefono:" lineBreakMode="clip" baselineAdjustment="none" adjustsFontSizeToFit="NO" id="cok-EY-cgN">
+                                <rect key="frame" x="7" y="205" width="306" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mzC-fO-74B">
+                                <rect key="frame" x="58" y="216" width="149" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="040-370444">
+                                    <color key="titleColor" red="0.0011133552099999999" green="0.001772423203" blue="0.003009406888" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bottone_telefono:" destination="kt8-Ex-06h" eventType="touchUpInside" id="fr1-kD-8Nb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" text="   Orari:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JLb-OS-YWD">
+                                <rect key="frame" x="7" y="267" width="306" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="connessione dati necessaria" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mCC-V8-n8t">
+                                <rect key="frame" x="58" y="274" width="250" height="36"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FeB-c7-5wH">
+                                <rect key="frame" x="7" y="331" width="306" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Mostra il percorso" backgroundImage="test_label.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mappa_ios:" destination="kt8-Ex-06h" eventType="touchUpInside" id="p2b-kK-r9k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                    </view>
+                    <navigationItem key="navigationItem" id="4iW-Xe-tN4">
+                        <barButtonItem key="backBarButtonItem" title="Negozio" id="qmq-d7-93H"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="jsonSummary" destination="mCC-V8-n8t" id="iPs-bJ-TZV"/>
+                        <outlet property="mappa" destination="gbc-CV-hQ0" id="E6I-by-h2h"/>
+                        <outlet property="orario_negozio" destination="JLb-OS-YWD" id="DIb-oh-74Z"/>
+                        <outlet property="tel" destination="cok-EY-cgN" id="2Fb-QX-qpr"/>
+                        <segue destination="O01-cN-iIz" kind="push" identifier="chi_siamo" id="DIx-wf-OoF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPK-2J-AhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="486"/>
+        </scene>
+        <!--Chi Siamo View Controller-->
+        <scene sceneID="XOI-Qh-rs0">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="O01-cN-iIz" customClass="chiSiamoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lEs-g3-Est">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" id="nog-82-rIw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Uj-dW-Vz8">
+                        <barButtonItem key="backBarButtonItem" title="Negozio" id="MTh-EL-cKk"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="chiSiamo" destination="nog-82-rIw" id="0Or-CP-lPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50o-Gc-CAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="486"/>
+        </scene>
+        <!--Navigation Controller - Home-->
+        <scene sceneID="90O-e5-GUW">
+            <objects>
+                <navigationController restorationIdentifier="" storyboardIdentifier="" definesPresentationContext="YES" modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" navigationBarHidden="YES" id="5hK-CX-mdd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Home" image="icona_home.png" id="Yj9-dJ-1EN"/>
+                    <navigationItem key="navigationItem" id="fMa-6c-I0u"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6gV-Ug-740">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5Y1-kc-YQ9">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="W1H-cv-yF9" kind="relationship" relationship="rootViewController" id="BiO-Em-W7K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPg-MF-ScL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-359"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blog.png" width="24" height="24"/>
+        <image name="icona_home.png" width="30" height="30"/>
+        <image name="icona_negozio.png" width="30" height="30"/>
+        <image name="newspaper.png" width="26" height="26"/>
+        <image name="shopping-cart.png" width="28" height="28"/>
+        <image name="test_label.png" width="306" height="50"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
